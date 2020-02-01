@@ -1,0 +1,11 @@
+C:\Users\Michael\source\repos\Grand Circus\Week2CapstoneTaskList\Week2CapstoneTaskList\bin\Debug\netcoreapp3.1\Week2CapstoneTaskList.exe
+C:\Users\Michael\source\repos\Grand Circus\Week2CapstoneTaskList\Week2CapstoneTaskList\bin\Debug\netcoreapp3.1\Week2CapstoneTaskList.deps.json
+C:\Users\Michael\source\repos\Grand Circus\Week2CapstoneTaskList\Week2CapstoneTaskList\bin\Debug\netcoreapp3.1\Week2CapstoneTaskList.runtimeconfig.json
+C:\Users\Michael\source\repos\Grand Circus\Week2CapstoneTaskList\Week2CapstoneTaskList\bin\Debug\netcoreapp3.1\Week2CapstoneTaskList.runtimeconfig.dev.json
+C:\Users\Michael\source\repos\Grand Circus\Week2CapstoneTaskList\Week2CapstoneTaskList\bin\Debug\netcoreapp3.1\Week2CapstoneTaskList.dll
+C:\Users\Michael\source\repos\Grand Circus\Week2CapstoneTaskList\Week2CapstoneTaskList\bin\Debug\netcoreapp3.1\Week2CapstoneTaskList.pdb
+C:\Users\Michael\source\repos\Grand Circus\Week2CapstoneTaskList\Week2CapstoneTaskList\obj\Debug\netcoreapp3.1\Week2CapstoneTaskList.csprojAssemblyReference.cache
+C:\Users\Michael\source\repos\Grand Circus\Week2CapstoneTaskList\Week2CapstoneTaskList\obj\Debug\netcoreapp3.1\Week2CapstoneTaskList.AssemblyInfoInputs.cache
+C:\Users\Michael\source\repos\Grand Circus\Week2CapstoneTaskList\Week2CapstoneTaskList\obj\Debug\netcoreapp3.1\Week2CapstoneTaskList.AssemblyInfo.cs
+C:\Users\Michael\source\repos\Grand Circus\Week2CapstoneTaskList\Week2CapstoneTaskList\obj\Debug\netcoreapp3.1\Week2CapstoneTaskList.dll
+C:\Users\Michael\source\repos\Grand Circus\Week2CapstoneTaskList\Week2CapstoneTaskList\obj\Debug\netcoreapp3.1\Week2CapstoneTaskList.pdb

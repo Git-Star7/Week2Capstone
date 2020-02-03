@@ -21,6 +21,7 @@ namespace Week2CapstoneTaskList
             bool continueLoop = true;
             do
             {
+                //Prints menu and asks for input. Displays selection based on int input. Quit breaks the loop.
                 PrintList(menu);
                 int input = InputIsInt(menu, GetUserInput("\nSelect an option: "));
                 if (input == 0) { ListTasks(listOfTasks); }
@@ -34,7 +35,7 @@ namespace Week2CapstoneTaskList
             while (continueLoop == true);
         }
 
-        public static int InputIsInt(List<MyTask> list, string pick)
+        public static int InputIsInt(List<MyTask> list, string pick) //takes in a number and catches if it's invalid (for MyTask lists)
         {
             try
             {
@@ -47,7 +48,7 @@ namespace Week2CapstoneTaskList
                 return InputIsInt(list, GetUserInput($"Invalid selection, enter a number between 1 - {list.Count}: "));
             }
         }
-        public static int InputIsInt(List<string> list, string pick)
+        public static int InputIsInt(List<string> list, string pick) //takes in a number and catches if it's invalid (for string lists)
         {
             try
             {
@@ -60,7 +61,7 @@ namespace Week2CapstoneTaskList
                 return InputIsInt(list, GetUserInput($"Invalid selection, enter a number between 1 - {list.Count}: "));
             }
         }
-        public static bool Option1or2(string message, string option1, string option2)
+        public static bool Option1or2(string message, string option1, string option2) //displays message and validates answer
         {
             string userContinue = "";
             while (userContinue != option1 && userContinue != option2)
@@ -76,14 +77,14 @@ namespace Week2CapstoneTaskList
             }
             return true;
         }
-        public static string GetUserInput(string message)
+        public static string GetUserInput(string message) //takes in input and displays message
         {
             Console.Write(message);
             string input = Console.ReadLine();
             return input;
         }
 
-        public static void PrintList(List<string> listToPrint)
+        public static void PrintList(List<string> listToPrint) //loops through the list and prints menu list (<string>)
         {
             Console.WriteLine();
             for (int i = 0; i < listToPrint.Count; i++)
@@ -91,7 +92,7 @@ namespace Week2CapstoneTaskList
                 Console.WriteLine($"  {i + 1}: {listToPrint[i]}");
             }
         }
-        public static void ListTasks(List<MyTask> listToPrint)
+        public static void ListTasks(List<MyTask> listToPrint) //loops through task list and prints the details out
         {
             Console.WriteLine();
             for (int i = 0; i < listToPrint.Count; i++)
@@ -100,7 +101,7 @@ namespace Week2CapstoneTaskList
             }
             Console.WriteLine();
         }
-        public static void AddTask(List<MyTask> listToAddTo)
+        public static void AddTask(List<MyTask> listToAddTo) //adds new task to listOfTasks to bottom of list
         {
             string name = GetUserInput("\nTeam Member Name: ");
             string description = GetUserInput("Task Description: ");
@@ -123,7 +124,7 @@ namespace Week2CapstoneTaskList
             Console.WriteLine();
             listToAddTo.Add(new MyTask ( name, description, dueDate ));
         }
-        public static void DeleteTask(List<MyTask> listToDeleteFrom)
+        public static void DeleteTask(List<MyTask> listToDeleteFrom) //deletes task at point of selection
         {
             ListTasks(listToDeleteFrom);
             int num = InputIsInt(listToDeleteFrom, GetUserInput("Select a task to delete: "));
@@ -134,7 +135,7 @@ namespace Week2CapstoneTaskList
                 listToDeleteFrom.RemoveAt(num);
             }
         }
-        public static void MarkTaskComplete(List<MyTask> listToMarkComplete)
+        public static void MarkTaskComplete(List<MyTask> listToMarkComplete) //marks completion as true at point of selection
         {
             ListTasks(listToMarkComplete);
             int num = InputIsInt(listToMarkComplete, GetUserInput("\nSelect a task to mark as complete: "));
@@ -145,7 +146,7 @@ namespace Week2CapstoneTaskList
                 listToMarkComplete[num].Completed = true;
             }
         }
-        public static void EditTask(List<MyTask> listToEdit)
+        public static void EditTask(List<MyTask> listToEdit) //select task to edit and asks what you want to edit. then edits it
         {
 
             ListTasks(listToEdit);
